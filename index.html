@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anshika Mishra - Software Engineer specializing in custom Electron UI runtimes, React/TypeScript platform engineering, and high-reliability systems at Lowe's.">
+  <meta name="author" content="Km Anshika">
+  <meta name="keywords" content="Anshika Mishra, Software Engineer, Electron Developer, React Developer, TypeScript, Lowes, Frontend Platform Engineer, Systems Engineer">
+  
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="Anshika Mishra | Software & Systems Engineer">
+  <meta property="og:description" content="Explore the portfolio of Anshika Mishra, developer of custom UI runtimes, self-checkout platforms, and scalable enterprise architectures.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://anshikamishra.in">
+  
+  <title>Anshika Mishra | Software & Systems Platform Engineer</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="index.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Floating Ambient Glows -->
+  <div class="glow-orb orb-1" aria-hidden="true"></div>
+  <div class="glow-orb orb-2" aria-hidden="true"></div>
+  <div class="glow-orb orb-3" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo">
+        <span class="logo-terminal">&lt;</span>Anshika<span class="logo-accent">.in</span><span class="logo-terminal">&gt;</span>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link active-link" id="link-about">About</a>
+        <a href="#experience" class="nav-link" id="link-experience">Experience</a>
+        <a href="#simulator" class="nav-link nav-highlight" id="link-simulator">System Console</a>
+        <a href="#skills" class="nav-link" id="link-skills">Skills</a>
+        <a href="#education" class="nav-link" id="link-education">Education</a>
+        <a href="#contact" class="nav-link" id="link-contact">Contact</a>
+      </nav>
+
+      <div class="nav-status-badge" id="system-status-badge">
+        <span class="status-dot pulsing"></span>
+        <span class="status-text">SCO RUNTIME: ACTIVE</span>
+      </div>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-container">
+            <span class="badge" id="hero-badge"><i data-lucide="terminal" class="badge-icon"></i> Systems & UI Platform Architect</span>
+          </div>
+          <h1 class="hero-title" id="hero-title">
+            Building Resilient <br>
+            <span class="gradient-text">Custom Runtimes</span> & UIs
+          </h1>
+          <p class="hero-description" id="hero-desc">
+            I am a **Software Engineer** specializing in engineering high-reliability desktop platform architectures (Electron, Node.js, TypeScript) and modern user interfaces (React, Redux-Saga) that scale. Managed platform reliability, crash mitigations, and automated deployments for <strong>100,800+ devices</strong>.
+          </p>
+          <div class="hero-actions" id="hero-actions">
+            <a href="#simulator" class="btn btn-primary" id="btn-explore-console">
+              <i data-lucide="cpu" class="btn-icon"></i> Launch Console
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="btn-get-in-touch">
+              <i data-lucide="mail" class="btn-icon"></i> Get In Touch
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-visual" id="hero-visual">
+          <div class="mockup-terminal">
+            <div class="terminal-header">
+              <div class="terminal-buttons">
+                <span class="term-btn close"></span>
+                <span class="term-btn minimize"></span>
+                <span class="term-btn expand"></span>
+              </div>
+              <span class="terminal-title">anshika@lowes-sco-runtime ~ zsh</span>
+            </div>
+            <div class="terminal-body" id="hero-terminal-body">
+              <div class="code-line"><span class="code-prompt">$</span> npm run start:runtime</div>
+              <div class="code-line stdout text-dim">&gt; lowes-core-runtime@4.2.0 start</div>
+              <div class="code-line stdout text-dim">&gt; electron-forge start</div>
+              <div class="code-line stdout"><span class="text-green">[SUCCESS]</span> Initialized custom Electron UI shell (v28.2.1)</div>
+              <div class="code-line stdout"><span class="text-green">[SUCCESS]</span> Connected to peripherals: Scanner, Printer, POS Scale</div>
+              <div class="code-line stdout"><span class="text-purple">[SYSTEM]</span> Loaded Redux-Saga side-effect platform layer</div>
+              <div class="code-line stdout"><span class="text-cyan">[METRIC]</span> Serving 100,000+ daily store sessions...</div>
+              <div class="code-line"><span class="code-prompt">$</span> <span class="typing-cursor"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Impact Highlights (Metrics) -->
+    <section class="metrics-section" id="about">
+      <div class="container">
+        <div class="metrics-grid" id="metrics-grid">
+          
+          <div class="metric-card glass-card" id="metric-devices">
+            <div class="metric-icon-wrap primary-glow">
+              <i data-lucide="monitor" class="metric-icon text-cyan"></i>
+            </div>
+            <div class="metric-info">
+              <h3 class="metric-val" data-target="100800">100,800+</h3>
+              <p class="metric-label">Active Store Devices</p>
+            </div>
+          </div>
+
+          <div class="metric-card glass-card" id="metric-crashes">
+            <div class="metric-icon-wrap warning-glow">
+              <i data-lucide="zap-off" class="metric-icon text-orange"></i>
+            </div>
+            <div class="metric-info">
+              <h3 class="metric-val" data-target="58">58%</h3>
+              <p class="metric-label">Navigation Crash Reduction</p>
+            </div>
+          </div>
+
+          <div class="metric-card glass-card" id="metric-build">
+            <div class="metric-icon-wrap purple-glow">
+              <i data-lucide="gauge" class="metric-icon text-purple"></i>
+            </div>
+            <div class="metric-info">
+              <h3 class="metric-val" data-target="60">60%</h3>
+              <p class="metric-label">Nx Build Speedup</p>
+            </div>
+          </div>
+
+          <div class="metric-card glass-card" id="metric-sessions">
+            <div class="metric-icon-wrap success-glow">
+              <i data-lucide="activity" class="metric-icon text-green"></i>
+            </div>
+            <div class="metric-info">
+              <h3 class="metric-val" data-target="100000">100k+</h3>
+              <p class="metric-label">Daily Runtimes Sessions</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="experience-section section-padding" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">PROFESSIONAL JOURNEY</span>
+          <h2 class="section-title">Work Experience</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline" id="experience-timeline">
+          
+          <!-- Job Item 1 (SE) -->
+          <div class="timeline-item right" id="experience-se">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header-block">
+                <div>
+                  <h3 class="role-title">Software Engineer</h3>
+                  <span class="company-name">Lowe’s Services India Pvt. Ltd.</span>
+                </div>
+                <span class="timeline-date">May 2024 - Present</span>
+              </div>
+              
+              <p class="experience-desc">
+                Leading the engineering of a high-performance **custom UI runtime** utilizing **Electron, Node.js, and TypeScript** with resilient state systems. Focused on enhancing observability, developer productivity, and platform security for store operations.
+              </p>
+              
+              <ul class="bullets-list">
+                <li><strong>Custom Electron UI Runtime:</strong> Designed a robust, multi-persona UI platform that handles event-driven state updates, cutting workflow overheads by **5 minutes per user daily**.</li>
+                <li><strong>Inter-App Architecture:</strong> Authored unified asynchronous APIs and inter-app communication frameworks enabling client apps to smoothly access lower-level system capabilities across **20+ integrated systems**.</li>
+                <li><strong>POS Security & RBAC:</strong> Engineered device-level authentication with **OAuth 2.0, OpenID Connect, Keycloak, and ForgeRock** incorporating activity logs, session locking, and role-based access control.</li>
+                <li><strong>Observability Dashboard:</strong> Set up structured logging pipelines using **Elasticsearch and Grafana**, dropping mean-time-to-diagnosis (MTTD) from **45 to under 15 minutes**.</li>
+                <li><strong>CI/CD Pipelines:</strong> Migrated legacy pipelines to an enterprise-grade automation framework and integrated the **Nx monorepo build system**, driving down build speeds by **60%**.</li>
+                <li><strong>Cross-Platform Packaging:</strong> Built custom deployment and packaging automations for macOS and Windows, saving **~4 hours of engineering time** per release cycle.</li>
+              </ul>
+              
+              <div class="timeline-tags">
+                <span class="tag-tech">Electron</span>
+                <span class="tag-tech">TypeScript</span>
+                <span class="tag-tech">Node.js</span>
+                <span class="tag-tech">Redux-Saga</span>
+                <span class="tag-tech">OAuth 2.0</span>
+                <span class="tag-tech">Elasticsearch</span>
+                <span class="tag-tech">Nx Build</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job Item 2 (ASE) -->
+          <div class="timeline-item left" id="experience-ase">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header-block">
+                <div>
+                  <h3 class="role-title">Associate Software Engineer</h3>
+                  <span class="company-name">Lowe’s Services India Pvt. Ltd.</span>
+                </div>
+                <span class="timeline-date">June 2022 - May 2024</span>
+              </div>
+              
+              <p class="experience-desc">
+                Specialized in core platform features for **Next Gen SCO (Self-Checkout)** machines. Delivered microservices to handle reliable OS updates across 1,800+ locations.
+              </p>
+              
+              <ul class="bullets-list">
+                <li><strong>React Platform Core:</strong> Owned platform frontends in **React + TS + Redux/Saga**, shifting complex asynchronous side-effects into strongly-typed sagas to eliminate runtime crashes on **100,800 devices**.</li>
+                <li><strong>State Machine & Nav Guard:</strong> Created a highly resilient guarded state-machine navigation system with strictly validated API contracts, cutting navigation crashes by **58%** and reducing response latency by **160 ms**.</li>
+                <li><strong>Electron Upgrade & Diagnostics:</strong> Spearheaded critical upgrade to Electron v28 and configured hardware memory/segfault signal listeners, boosting system reliability by **37%** via automated Grafana alerts.</li>
+                <li><strong>UX Core Optimization:</strong> Fully re-engineered high-traffic loading, verification, and transaction UI systems, reducing perceived user latency and standardizing store-wide UI components.</li>
+                <li><strong>SLI/SLO Instrumentation:</strong> Defined and established alerts for p95 latency, app start rates, and crash telemetry, enabling SLA-driven product releases.</li>
+                <li><strong>Progressive Rollouts:</strong> Streamlined builds with artifact provenance and feature flags, trimming deployment loops from **3 days to 3 hours** and reducing change failure rate from **6.8% to 2.1%**.</li>
+                <li><strong>Diagnostics Dashboard:</strong> Designed and deployed a React-based crash-capture application, accelerating real-time triage for store support teams.</li>
+              </ul>
+              
+              <div class="timeline-tags">
+                <span class="tag-tech">React</span>
+                <span class="tag-tech">Redux-Saga</span>
+                <span class="tag-tech">TypeScript</span>
+                <span class="tag-tech">Grafana Alerts</span>
+                <span class="tag-tech">Cypress</span>
+                <span class="tag-tech">OS Automation</span>
+                <span class="tag-tech">Git</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE "WOW" FEATURE: The Custom Runtime Simulator -->
+    <section class="simulator-section section-padding" id="simulator">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">LIVE SYSTEM DEMONSTRATION</span>
+          <h2 class="section-title">SCO & Custom Runtime Simulator</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            Experience my professional domain in real-time. This interactive dashboard simulates a live **Lowe's Self-Checkout Device** running my custom **Electron + React platform shell**. Run operations, test systems, and observe real-time telemetry!
+          </p>
+        </div>
+
+        <div class="simulator-grid" id="simulator-dashboard">
+          
+          <!-- Left Panel: Live Telemetry & Status -->
+          <div class="sim-panel telemetry-panel glass-card" id="sim-telemetry">
+            <div class="panel-header">
+              <i data-lucide="gauge" class="panel-header-icon text-cyan"></i>
+              <h3 class="panel-title">System Telemetry (100,800 Devices)</h3>
+            </div>
+            
+            <div class="panel-body">
+              <!-- Telemetry Gauge: CPU -->
+              <div class="telemetry-bar-group">
+                <div class="bar-header">
+                  <span class="bar-label"><i data-lucide="cpu" class="small-icon"></i> CPU Usage</span>
+                  <span class="bar-value text-cyan" id="cpu-value">28%</span>
+                </div>
+                <div class="bar-bg">
+                  <div class="bar-fill bg-cyan" id="cpu-bar" style="width: 28%"></div>
+                </div>
+              </div>
+
+              <!-- Telemetry Gauge: Memory -->
+              <div class="telemetry-bar-group">
+                <div class="bar-header">
+                  <span class="bar-label"><i data-lucide="database" class="small-icon"></i> Memory Allocation</span>
+                  <span class="bar-value text-purple" id="mem-value">1.4 GB</span>
+                </div>
+                <div class="bar-bg">
+                  <div class="bar-fill bg-purple" id="mem-bar" style="width: 35%"></div>
+                </div>
+              </div>
+
+              <!-- Telemetry Gauge: Render Latency -->
+              <div class="telemetry-bar-group">
+                <div class="bar-header">
+                  <span class="bar-label"><i data-lucide="clock" class="small-icon"></i> UI Render Latency</span>
+                  <span class="bar-value text-green" id="latency-value">42 ms</span>
+                </div>
+                <div class="bar-bg">
+                  <div class="bar-fill bg-green" id="latency-bar" style="width: 21%"></div>
+                </div>
+              </div>
+
+              <!-- System State Indicators -->
+              <div class="system-stats-grid">
+                <div class="stat-box">
+                  <span class="stat-box-title">Change Failure Rate</span>
+                  <span class="stat-box-val text-green" id="stat-failure-rate">2.1%</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-box-title">Mean Time to Diagnosis</span>
+                  <span class="stat-box-val text-purple" id="stat-mttd">14.8m</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-box-title">Active Deployments</span>
+                  <span class="stat-box-val text-cyan" id="stat-active-deploys">1,824 Stores</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-box-title">Security State</span>
+                  <span class="stat-box-val text-green" id="stat-security">OAuth Secure</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Panel: Interactive Operations -->
+          <div class="sim-panel controls-panel glass-card" id="sim-controls">
+            <div class="panel-header">
+              <i data-lucide="sliders" class="panel-header-icon text-purple"></i>
+              <h3 class="panel-title">Interactive Runtime Controls</h3>
+            </div>
+            
+            <div class="panel-body">
+              <p class="controls-instructions">
+                Trigger platform tasks to observe automated recoveries, state progressions, and deployment validations.
+              </p>
+              
+              <div class="control-actions-grid">
+                <button class="btn-control primary-glow" id="btn-sim-rollout">
+                  <i data-lucide="rocket" class="ctrl-icon text-cyan"></i>
+                  <div class="ctrl-btn-text">
+                    <span class="ctrl-title">Rollout Update</span>
+                    <span class="ctrl-desc">Deploy OS bundle to 1800+ stores</span>
+                  </div>
+                </button>
+
+                <button class="btn-control warning-glow" id="btn-sim-crash">
+                  <i data-lucide="alert-triangle" class="ctrl-icon text-orange"></i>
+                  <div class="ctrl-btn-text">
+                    <span class="ctrl-title">Simulate Crash & Alert</span>
+                    <span class="ctrl-desc">Trigger OOM / recovery loop</span>
+                  </div>
+                </button>
+
+                <button class="btn-control success-glow" id="btn-sim-test">
+                  <i data-lucide="check-circle-2" class="ctrl-icon text-green"></i>
+                  <div class="ctrl-btn-text">
+                    <span class="ctrl-title">Run WebDriver/Cypress</span>
+                    <span class="ctrl-desc">Verify E2E and Redux state API</span>
+                  </div>
+                </button>
+
+                <button class="btn-control purple-glow" id="btn-sim-secure">
+                  <i data-lucide="shield-check" class="ctrl-icon text-purple"></i>
+                  <div class="ctrl-btn-text">
+                    <span class="ctrl-title">Rotate OIDC Credentials</span>
+                    <span class="ctrl-desc">Re-auth Keycloak & active POS</span>
+                  </div>
+                </button>
+              </div>
+
+              <!-- Live Logger Module -->
+              <div class="live-logger-container">
+                <div class="logger-header">
+                  <div class="logger-dot-wrap">
+                    <span class="logger-dot"></span>
+                    <span class="logger-dot"></span>
+                    <span class="logger-dot"></span>
+                  </div>
+                  <span class="logger-title">Active Process Terminal</span>
+                  <button class="logger-clear-btn" id="btn-clear-logger" aria-label="Clear Console">
+                    <i data-lucide="trash-2" class="small-icon"></i>
+                  </button>
+                </div>
+                <div class="logger-body" id="sim-logger-body">
+                  <div class="log-line stdout text-dim">[INFO] SCO Runtime Simulator Initialized. Select a command above to test.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Matrix -->
+    <section class="skills-section section-padding" id="skills">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">EXPERTISE MAP</span>
+          <h2 class="section-title">Technical Capabilities</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="skills-filters" id="skills-filters">
+          <button class="skill-filter-btn active" data-filter="all" id="btn-filter-all">All Skills</button>
+          <button class="skill-filter-btn" data-filter="runtimes" id="btn-filter-runtimes">Systems & Runtimes</button>
+          <button class="skill-filter-btn" data-filter="frontend" id="btn-filter-frontend">Frontend & UI</button>
+          <button class="skill-filter-btn" data-filter="devops" id="btn-filter-devops">DevOps & CI/CD</button>
+          <button class="skill-filter-btn" data-filter="databases" id="btn-filter-databases">Data & Search</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skills-grid">
+          
+          <!-- Runtimes & Systems -->
+          <div class="skill-card glass-card" data-category="runtimes" id="skill-electron">
+            <div class="skill-header">
+              <span class="skill-name">Electron</span>
+              <span class="proficiency-badge proficient">Proficient</span>
+            </div>
+            <div class="skill-desc">Custom shell creation, upgrades, hardware telemetry, crash dumps.</div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="runtimes" id="skill-nodejs">
+            <div class="skill-header">
+              <span class="skill-name">Node.js</span>
+              <span class="proficiency-badge proficient">Proficient</span>
+            </div>
+            <div class="skill-desc">Runtime environments, automation, core fs scripts, file streams.</div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="runtimes" id="skill-cpp">
+            <div class="skill-header">
+              <span class="skill-name">C++</span>
+              <span class="proficiency-badge proficient">Proficient</span>
+            </div>
+            <div class="skill-desc">Memory management, algorithms, POS peripheral communications.</div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="runtimes" id="skill-linux">
+            <div class="skill-header">
+              <span class="skill-name">Linux</span>
+              <span class="proficiency-badge proficient">Proficient</span>
+            </div>
+            <div class="skill-desc">OS provisioning, service configurations, scripting, automated system updates.</div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="runtimes" id="skill-c">
+            <div class="skill-header">
+              <span class="skill-name">C</span>
+              <span class="proficiency-badge familiar">Familiar</span>
+            </div>
+            <div class="skill-desc">Low-level embedded system fundamentals, memory structures.</div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="runtimes" id="skill-springboot">
+            <div class="skill-header">
+              <span class="skill-name">Spring Boot</span>
+              <span class="proficiency-badge familiar">Familiar</span>
+            </div>
+            <div class="skill-desc">Microservice REST APIs, database integration models.</div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="runtimes" id="skill-java">
+            <div class="skill-header">
+              <span class="skill-name">Java</span>
+              <span class="proficiency-badge familiar">Familiar</span>
+            </div>
+            <div class="skill-desc">Object-oriented patterns, server-side data processing.</div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-card glass-card" data-category="frontend" id="skill-typescript">
+            <div class="skill-header">
+              <span class="skill-name">TypeScript</span>
+              <span class="proficiency-badge proficient">Proficient</span>
+            </div>
+            <div class="skill-desc">Strict contract typings, strong interfaces, safe state structures.</div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="frontend" id="skill-javascript">
+            <div class="skill-header">
+              <span class="skill-name">JavaScript (ES6+)</span>
+              <span class="proficiency-badge proficient">Proficient</span>
+            </div>
+            <div class="skill-desc">Asynchronous event loops, dynamic UI elements, core structures.</div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="frontend" id="skill-react">
+            <div class="skill-header">
+              <span class="skill-name">React.js</span>
+              <span class="proficiency-badge proficient">Proficient</span>
+            </div>
+            <div class="skill-desc">Complex client side layouts, performant state, lifecycle APIs.</div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="frontend" id="skill-redux">
+            <div class="skill-header">
+              <span class="skill-name">Redux & Redux-Saga</span>
+              <span class="proficiency-badge proficient">Proficient</span>
+            </div>
+            <div class="skill-desc">Sagas for complex side-effects, centralized store architecture.</div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="frontend" id="skill-htmlcss">
+            <div class="skill-header">
+              <span class="skill-name">HTML5 & CSS3</span>
+              <span class="proficiency-badge proficient">Proficient</span>
+            </div>
+            <div class="skill-desc">Semantic DOM, advanced grids/flexboxes, dynamic variables.</div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="frontend" id="skill-reactnative">
+            <div class="skill-header">
+              <span class="skill-name">React Native</span>
+              <span class="proficiency-badge familiar">Familiar</span>
+            </div>
+            <div class="skill-desc">Cross-platform mobile UI development and layout structures.</div>
+          </div>
+
+          <!-- DevOps -->
+          <div class="skill-card glass-card" data-category="devops" id="skill-jenkins">
+            <div class="skill-header">
+              <span class="skill-name">Jenkins</span>
+              <span class="proficiency-badge proficient">Proficient</span>
+            </div>
+            <div class="skill-desc">Deployment configurations, release automations, pipeline steps.</div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="devops" id="skill-git">
+            <div class="skill-header">
+              <span class="skill-name">Git</span>
+              <span class="proficiency-badge proficient">Proficient</span>
+            </div>
+            <div class="skill-desc">Advanced branching, merges, submodules, provenance tracking.</div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="devops" id="skill-nx">
+            <div class="skill-header">
+              <span class="skill-name">Nx Build System</span>
+              <span class="proficiency-badge proficient">Proficient</span>
+            </div>
+            <div class="skill-desc">Monorepo management, dependency graphs, cached build runs.</div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="devops" id="skill-docker">
+            <div class="skill-header">
+              <span class="skill-name">Docker</span>
+              <span class="proficiency-badge familiar">Familiar</span>
+            </div>
+            <div class="skill-desc">Containerization, isolated local builds, microservice staging.</div>
+          </div>
+
+          <!-- Databases & Search -->
+          <div class="skill-card glass-card" data-category="databases" id="skill-mysql">
+            <div class="skill-header">
+              <span class="skill-name">MySQL</span>
+              <span class="proficiency-badge proficient">Proficient</span>
+            </div>
+            <div class="skill-desc">Structured tables, data integrity, optimized query writing.</div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="databases" id="skill-postgresql">
+            <div class="skill-header">
+              <span class="skill-name">PostgreSQL</span>
+              <span class="proficiency-badge familiar">Familiar</span>
+            </div>
+            <div class="skill-desc">Relational schemas, indexing strategies, app persistence.</div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="databases" id="skill-elasticsearch">
+            <div class="skill-header">
+              <span class="skill-name">Elasticsearch</span>
+              <span class="proficiency-badge familiar">Familiar</span>
+            </div>
+            <div class="skill-desc">Log ingestion, index configuration, search indexing.</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="projects-section section-padding" id="projects">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">PORTFOLIO WORK</span>
+          <h2 class="section-title">Projects Showcase</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          
+          <div class="project-card glass-card" id="project-survey">
+            <div class="project-image-mock">
+              <div class="project-overlay-glow"></div>
+              <i data-lucide="clipboard-signature" class="project-visual-icon"></i>
+            </div>
+            <div class="project-info">
+              <div class="project-header-row">
+                <h3 class="project-name">Survey Management Application</h3>
+                <span class="project-tag">Full-Stack</span>
+              </div>
+              <p class="project-desc">
+                Developed as a key deliverable during Bootcamp training at Lowe's. This enterprise survey platform enables managers to create custom user opinion forms, capture user input in real-time, process logs, and visually graph analytics to drive corporate decision-making.
+              </p>
+              <div class="project-tech-stack">
+                <span class="p-tech">Java</span>
+                <span class="p-tech">Spring Boot</span>
+                <span class="p-tech">PostgreSQL</span>
+                <span class="p-tech">React</span>
+                <span class="p-tech">Node.js</span>
+                <span class="p-tech">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section section-padding" id="education">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">ACADEMIC BACKGROUND</span>
+          <h2 class="section-title">Education & Training</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="education-grid" id="education-grid">
+          
+          <!-- BITS Pilani -->
+          <div class="education-card glass-card" id="edu-bits">
+            <div class="edu-icon-wrap">
+              <i data-lucide="graduation-cap" class="edu-icon text-cyan"></i>
+            </div>
+            <span class="edu-duration">2025 - Present (Ongoing)</span>
+            <h3 class="edu-degree">MBA in AI for Business</h3>
+            <h4 class="edu-school">Birla Institute of Technology and Science (BITS), Pilani</h4>
+            <p class="edu-details text-dim">
+              Online Work Integrated Learning Program (WILP) designed to fuse advanced AI capabilities, machine learning strategies, and product design paradigms with enterprise management and strategy.
+            </p>
+          </div>
+
+          <!-- NIT Silchar -->
+          <div class="education-card glass-card" id="edu-nits">
+            <div class="edu-icon-wrap">
+              <i data-lucide="graduation-cap" class="edu-icon text-purple"></i>
+            </div>
+            <span class="edu-duration">2018 - 2022</span>
+            <h3 class="edu-degree">B.Tech in Computer Science & Engineering</h3>
+            <h4 class="edu-school">National Institute of Technology (NIT), Silchar</h4>
+            <p class="edu-details text-dim">
+              Completed intensive engineering studies covering algorithms, operating systems, compiler design, networks, and software engineering. <br>
+              <strong>Academic Standing:</strong> CPI 8.47 / 10.0
+            </p>
+          </div>
+
+          <!-- School -->
+          <div class="education-card glass-card" id="edu-school">
+            <div class="edu-icon-wrap">
+              <i data-lucide="school" class="edu-icon text-green"></i>
+            </div>
+            <span class="edu-duration">Completed 2017</span>
+            <h3 class="edu-degree">Intermediate Science (UP Board)</h3>
+            <h4 class="edu-school">S.M.S.Y.I.C.S (Mainpuri, Uttar Pradesh)</h4>
+            <p class="edu-details text-dim">
+              Specialized in Science, Physics, Chemistry, and Mathematics. <br>
+              <strong>Academic Standing:</strong> 77% Aggregate
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">CONNECT WITH ME</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            Looking to collaborate on desktop runtime systems, high-performance web platforms, or have opportunities in software engineering? Send a message directly!
+          </p>
+        </div>
+
+        <div class="contact-grid" id="contact-grid">
+          
+          <!-- Contact Info -->
+          <div class="contact-info-block glass-card" id="contact-info">
+            <h3 class="contact-info-title">Contact Information</h3>
+            <p class="contact-info-desc text-dim">
+              Feel free to reach out via email, check my LinkedIn profile, or explore my system code repositories.
+            </p>
+
+            <div class="info-list">
+              <div class="info-item">
+                <i data-lucide="mail" class="info-icon text-cyan"></i>
+                <div>
+                  <span class="info-label">Direct Email</span>
+                  <a href="mailto:kmanshika865@gmail.com" class="info-val">kmanshika865@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i data-lucide="linkedin" class="info-icon text-purple"></i>
+                <div>
+                  <span class="info-label">LinkedIn Profile</span>
+                  <a href="https://www.linkedin.com/in/anshika-mishra-4090a11a0/" target="_blank" rel="noopener noreferrer" class="info-val">anshika-mishra-4090a11a0</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i data-lucide="map-pin" class="info-icon text-green"></i>
+                <div>
+                  <span class="info-label">Current Location</span>
+                  <span class="info-val text-white">Bengaluru, Karnataka, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-block glass-card" id="contact-form-container">
+            <form class="contact-form" id="portfolio-contact-form">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Your Name</label>
+                  <input type="text" id="form-name" class="form-input" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Email Address</label>
+                  <input type="email" id="form-email" class="form-input" placeholder="john@example.com" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject</label>
+                <input type="text" id="form-subject" class="form-input" placeholder="Opportunity / Collaboration" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message Content</label>
+                <textarea id="form-message" class="form-textarea" rows="5" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full-width" id="btn-submit-form">
+                <i data-lucide="send" class="btn-icon"></i> Send Message
+              </button>
+              
+              <div class="form-feedback" id="form-feedback-message"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo">&lt;Anshika.in&gt;</span>
+        <p class="footer-brand-text text-dim">
+          Engineering reliable UI runtime architectures and high-fidelity product interfaces.
+        </p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="mailto:kmanshika865@gmail.com" class="social-link" aria-label="Email Address">
+          <i data-lucide="mail"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/anshika-mishra-4090a11a0/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+          <i data-lucide="linkedin"></i>
+        </a>
+        <a href="#" class="social-link" aria-label="GitHub Repository">
+          <i data-lucide="github"></i>
+        </a>
+      </div>
+      
+      <div class="footer-copyright text-dim">
+        &copy; <span id="copyright-year">2026</span> Km Anshika. All Rights Reserved. <br>
+        <span class="footer-subtext">Built with HTML5, CSS3, & JS. Powered by high-speed hardware runtimes.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="index.js"></script>
+</body>
+</html>
